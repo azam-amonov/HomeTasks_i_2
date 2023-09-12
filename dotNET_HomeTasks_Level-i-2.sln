@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dars_N41_C36", "Dars_N41_C36", "{680E42AB-DC68-4F7F-8559-C7C857B604BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomaTask_41", "HomaTask_41\HomaTask_41.csproj", "{88711190-6D8B-4F64-AAC6-0722CF3758BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{88711190-6D8B-4F64-AAC6-0722CF3758BF} = {680E42AB-DC68-4F7F-8559-C7C857B604BD}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88711190-6D8B-4F64-AAC6-0722CF3758BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88711190-6D8B-4F64-AAC6-0722CF3758BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88711190-6D8B-4F64-AAC6-0722CF3758BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88711190-6D8B-4F64-AAC6-0722CF3758BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
