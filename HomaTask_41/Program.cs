@@ -7,3 +7,4 @@ var employee = new Employee("Anna", "doe", "example@example.com", "qwerty");
 
 Console.WriteLine(person);
 Console.WriteLine(employee);
+Console.WriteLine(person);
