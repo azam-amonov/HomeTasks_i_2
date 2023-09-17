@@ -4,26 +4,26 @@ public class Order
 {
     public Guid Id { get; set; }
     public Guid OwnerId {get; set; }
-    public String Name { get; set; }
+    public String OwnerName { get; set; }
     public decimal Amount { get; set;}
-    public string Status { get; set; }
+    public bool IsActive { get; set; }
 
     public Order()
     {
         
     }
 
-    public Order( string name, decimal amount, string status)
+    public Order( string ownerName, decimal amount, bool isActive)
     {
         Id = Guid.NewGuid();
         OwnerId = Guid.NewGuid();
-        Name = name;
+        OwnerName = ownerName;
         Amount = amount;
-        Status = status;
+        IsActive = isActive;
     }
 
     public override string ToString()
     {
-        return $"{Id} {OwnerId} {Name} {Amount} {Status}";
+        return $"{Id} {OwnerId} {OwnerName} {Amount} {IsActive}";
     }
 }
