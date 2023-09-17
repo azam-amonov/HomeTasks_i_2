@@ -8,6 +8,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dars_N42_C37", "Dars_N42_C3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTask_42", "HomeTask_42\HomeTask_42.csproj", "{A750E86C-3FD0-4C1C-AB24-E769560BE1E5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dars_N43_C38", "Dars_N43_C38", "{9AF27A87-CBBB-4763-BA6B-80367D7EF14F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTask_43", "HomeTask_43\HomeTask_43.csproj", "{1C45BFB6-1E05-45F5-8806-138E71B8E969}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,6 +20,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{88711190-6D8B-4F64-AAC6-0722CF3758BF} = {680E42AB-DC68-4F7F-8559-C7C857B604BD}
 		{A750E86C-3FD0-4C1C-AB24-E769560BE1E5} = {6DF20D2F-BB75-47B9-968B-58A4E81BFCB0}
+		{1C45BFB6-1E05-45F5-8806-138E71B8E969} = {9AF27A87-CBBB-4763-BA6B-80367D7EF14F}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{88711190-6D8B-4F64-AAC6-0722CF3758BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -26,5 +31,9 @@ Global
 		{A750E86C-3FD0-4C1C-AB24-E769560BE1E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A750E86C-3FD0-4C1C-AB24-E769560BE1E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A750E86C-3FD0-4C1C-AB24-E769560BE1E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C45BFB6-1E05-45F5-8806-138E71B8E969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C45BFB6-1E05-45F5-8806-138E71B8E969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C45BFB6-1E05-45F5-8806-138E71B8E969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C45BFB6-1E05-45F5-8806-138E71B8E969}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
