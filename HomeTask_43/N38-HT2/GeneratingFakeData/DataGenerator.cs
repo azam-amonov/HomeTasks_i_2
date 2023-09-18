@@ -51,4 +51,5 @@ public class DataGenerator
         return _blogPosts = fakeBlogPosts.Generate(countOfFakeData);
     }
     
+    
 }
