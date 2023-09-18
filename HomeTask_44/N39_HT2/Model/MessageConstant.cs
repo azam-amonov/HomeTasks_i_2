@@ -1,6 +1,6 @@
-namespace HomeTask_42.N37_HT1.Models;
+namespace HomeTask_44.N39_HT2;
 
-public class MessageConstants
+public class MessageConstant
 {
     public static class Message
     {

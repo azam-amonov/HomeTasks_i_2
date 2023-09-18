@@ -1,7 +1,7 @@
 using HomeTask_42.N37_HT1.Enums;
 using HomeTask_42.N37_HT1.Interfaces;
 using HomeTask_42.N37_HT1.Models;
-using Message = HomeTask_42.N37_HT1.Models.MessageConstants.Message;
+using Message = HomeTask_42.N37_HT1.Models.MessageConstant.Message;
 
 namespace HomeTask_42.N37_HT1.Sevice;
 
