@@ -4,5 +4,5 @@ namespace N52_HT1.API.Services.Interface;
 
 public interface IEmailSenderService
 {
-    ValueTask SendEmailAsync(User user);
+    public ValueTask SendEmailAsync(User user);
 }
