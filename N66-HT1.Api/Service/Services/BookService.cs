@@ -33,18 +33,38 @@ public class BookService : IBookService
     {
         var existingData = await _appDbContext.Books.FirstOrDefaultAsync(book =>
                         book.Name == bookToCreate.Name && book.AuthorId == bookToCreate.AuthorId);
+
+        if (existingData is not null)
+            throw new AggregateException("This book already exists");
+
+        await _appDbContext.Books.AddAsync(bookToCreate);
+        await _appDbContext.SaveChangesAsync();
+        return bookToCreate;
+    }
+
+    public async ValueTask<Book> Update(Book bookToUpdate)
+    {
+        var existingBook = await _appDbContext.Books.FirstOrDefaultAsync(book => book.Id == bookToUpdate.Id);
+        if(existingBook is null)
+            throw new AggregateException("This book does not exist");
         
-        if(existingData is not null)
-            throw new AggregateException()
+        existingBook.AuthorId = bookToUpdate.AuthorId;
+        existingBook.Name = bookToUpdate.Name;
+        existingBook.Title = bookToUpdate.Title;
+
+        await _appDbContext.SaveChangesAsync();
+        return existingBook;
     }
 
-    public ValueTask<Book> Update(Book book)
+    public async ValueTask<bool> Delete(Guid id)
     {
-        throw new NotImplementedException();
-    }
-
-    public ValueTask<bool> Delete(Guid id)
-    {
-        throw new NotImplementedException();
+        var bookToDelete = await _appDbContext.Books.FirstOrDefaultAsync(book => book.Id == id);
+        if(bookToDelete is null)
+            throw new AggregateException("This book does not exist");
+        
+        _appDbContext.Books.Remove(bookToDelete);
+        await _appDbContext.SaveChangesAsync();
+        
+        return true;
     }
 }
